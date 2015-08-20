@@ -1,0 +1,2 @@
+# firstruby
+Ruby exercise
