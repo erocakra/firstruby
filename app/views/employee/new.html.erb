@@ -1,0 +1,23 @@
+<h1>New Employee</h1>
+
+<%= form_for :employee, url: employee_index_path  do |f| %>
+	<p>
+    <%= f.label :name %><br>
+	<%= f.text_field :name %>
+	</p>
+
+	<p>
+	<%= f.label :location %><br>
+	<%= f.select(:location) do %>
+	  <% [['Jakarta', 'Jakarta'], ['Depok', 'Depok'], ['Bekasi', 'Bekasi']].each do |c| -%>
+	    <%= content_tag(:option, c.first, value: c.last) %>
+	  <% end %>
+	<% end %>
+	</p>
+ 
+  	<p>
+    <%= f.submit %>
+  	</p>
+<% end %>
+
+<%= link_to 'HOME', controller: 'welcome' %>
