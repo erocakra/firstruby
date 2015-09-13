@@ -13,4 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require firstruby/firstruby.js
 //= require_tree .
+
+//= require init.js
+//= require employee.new.js
+//= require employee.index.js
