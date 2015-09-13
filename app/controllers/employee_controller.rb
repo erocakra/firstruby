@@ -1,7 +1,6 @@
 class EmployeeController < ApplicationController
 	def index
-    	#@employee = Employee.all
-    	@employee = Employee.where(nil) # creates an anonymous scope
+    		@employee = Employee.where(nil) # creates an anonymous scope
   		@employee = @employee.location(params[:location]) if params[:location].present?
   	end
 

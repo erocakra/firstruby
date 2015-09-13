@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title ="Simple Program"
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+  body
+    = yield
+
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    script type="text/javascript"
+      = javascript_initializer
+
